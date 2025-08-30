@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <!-- app & shortcut -->
+    <meta name="theme-color" content="#000010" />
+	<meta name="author" content="MAMEDUL ISLAM">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="apple-touch-icon" sizes="180x180" href="./icons/solar-system_180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icons/solar-system_32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icons/solar-system_16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+
+    <!-- Standard SEO Meta Tags -->
+    <title>Interactive 3D Solar System Explorer | Learn About Planets</title>
+    <meta name="description" content="Explore a realistic 3D model of our solar system. Click on planets, moons, and dwarf planets to learn fascinating facts. An interactive educational tool for all ages.">
+    <meta name="keywords" content="solar system model, 3d solar system, interactive planet explorer, astronomy for kids, space simulation, educational game, planets, moons">
+    <meta name="author" content="Your Name or Organization">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://mamedul.ddns.net/solar-3d/">
+
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mamedul.github.io/solar-3d/">
+    <meta property="og:title" content="Interactive 3D Solar System Explorer | Learn About Planets">
+    <meta property="og:description" content="Explore a realistic 3D model of our solar system. Click on planets, moons, and dwarf planets to learn fascinating facts.">
+    <meta property="og:image" content="https://mamedul.github.io/solar-3d/screenshot.png">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mamedul.github.io/solar-3d/">
+    <meta name="twitter:title" content="Interactive 3D Solar System Explorer | Learn About Planets">
+    <meta name="twitter:description" content="Explore a realistic 3D model of our solar system. Click on planets, moons, and dwarf planets to learn fascinating facts.">
+    <meta name="twitter:image" content="https://mamedul.github.io/solar-3d/screenshot.png">
+
+    <script>
+        !function(t,e){"use strict";t=t||"docReady",e=e||window;var n=[],a=!1,o=!1;function c(){if(!a){a=!0;for(var t=0;t<n.length;t++)n[t].fn.call(window,n[t].ctx);n=[]}}function d(){"complete"===document.readyState&&c()}e[t]=function(t,e){if("function"!=typeof t)throw TypeError("callback for docReady(fn) must be a function");if(a){setTimeout(function(){t(e)},1);return}n.push({fn:t,ctx:e}),"complete"!==document.readyState&&(document.attachEvent||"interactive"!==document.readyState)?o||(document.addEventListener?(document.addEventListener("DOMContentLoaded",c,!1),window.addEventListener("load",c,!1)):(document.attachEvent("onreadystatechange",d),window.attachEvent("onload",c)),o=!0):setTimeout(c,1)}}("docReady",window),function(t){let e=t.querySelector?t.querySelector("html"):t.body.parentNode||t.head.parentNode||t.children||t.all[0];e.classList.remove("no-js"),e.classList.add("js"),docReady(function(){setTimeout(function(){e.classList.add("js-loaded")},500)})}(document||window.document);
+    </script>
+	<style>
+        body,html{position:relative;overscroll-behavior-y:contain;overscroll-behavior:contain;height:100%;touch-action:pan-x pan-y}#loading{display:none;background:#000010;position:fixed;top:0;left:0;right:0;bottom:0;z-index:99999}#loading .ripple-loading,#loading .ripple-loading div{box-sizing:border-box}#loading .ripple-loading{position:relative;width:80px;height:80px;left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}#loading .ripple-loading div{position:absolute;border:4px solid #e8202e;opacity:1;border-radius:50%;-webkit-animation:1s cubic-bezier(0,.2,.8,1) infinite rippler;animation:1s cubic-bezier(0,.2,.8,1) infinite rippler}#loading .ripple-loading div:nth-child(2){-webkit-animation-delay:-.5s;animation-delay:-.5s;border-color:#ece717}@-webkit-keyframes rippler{0%,4.9%{top:36px;left:36px;width:8px;height:8px;opacity:0}5%{top:36px;left:36px;width:8px;height:8px;opacity:1}100%{top:0;left:0;width:80px;height:80px;opacity:0}}@keyframes rippler{0%,4.9%{top:36px;left:36px;width:8px;height:8px;opacity:0}5%{top:36px;left:36px;width:8px;height:8px;opacity:1}100%{top:0;left:0;width:80px;height:80px;opacity:0}}html.js #loading{display:block}html.js.js-loaded #app{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;min-height:100vh}html.js #app,html.js.js-loaded #loading,html.no-js #app{display:none}
+    </style>
+    
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "Interactive 3D Solar System Explorer",
+            "description": "Explore a realistic 3D model of our solar system. Click on planets, moons, and dwarf planets to learn fascinating facts. An interactive educational tool for all ages.",
+            "url": "https://mamedul.github.io/solar-3d/",
+            "applicationCategory": "EducationalApplication",
+            "operatingSystem": "Any web browser",
+            "browserRequirements": "Requires a modern web browser with WebGL support.",
+            "image": "https://mamedul.github.io/solar-3d/screenshot.png",
+            "keywords": "solar system model, 3d solar system, interactive planet explorer, astronomy, space simulation",
+            "inLanguage": "en-US",
+            "author": {
+                "@type": "Organization",
+                "name": "MAMEDUL ISLAM"
+            },
+            "datePublished": "2025-08-30",
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+            },
+            "audience": {
+                "@type": "Audience",
+                "audienceType": [
+                    "Student",
+                    "Teacher",
+                    "Parent"
+                ],
+                "geographicArea": {
+                    "@type": "AdministrativeArea",
+                    "name": "Worldwide"
+                }
+            }
+        }
+    </script>
+    
+    <link rel="preload" href="./styles.css" as="style" onload="this.rel='stylesheet';this.onload=null;">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" as="style" onload="this.rel='stylesheet';this.onload=null;">
+
+    <!-- Google analytics -->
+    <script defer src="https://www.googletagmanager.com/gtag/js?id=G-92XK2C4QE4"></script>
+	<script defer>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-92XK2C4QE4');
+	</script>
+</head>
+<body class="text-white">
+
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="https://www.google.com/chrome/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div id="loading">
+        <div class="ripple-loading">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+	<div id="app" class="app">
+
+        <!-- Canvas for 3D scene -->
+        <canvas id="bg"></canvas>
+
+        <!-- Controls -->
+        <div
+            class="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center space-x-1 sm:space-x-2 bg-black/50 p-1.5 sm:p-2 rounded-full shadow-lg backdrop-blur-sm border border-gray-700">
+            <button id="speed-down-btn"
+                class="control-btn w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-lg font-bold">-</button>
+            <button id="play-pause-btn"
+                class="control-btn w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center">
+                <svg id="pause-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 9v6m4-6v6" />
+                </svg>
+                <svg id="play-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                </svg>
+            </button>
+            <button id="speed-up-btn"
+                class="control-btn w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-lg font-bold">+</button>
+            <div class="w-px h-6 sm:h-8 bg-gray-600 mx-1 sm:mx-2"></div>
+            <button id="zoom-in-btn"
+                class="control-btn w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-2xl font-bold">+</button>
+            <button id="zoom-out-btn"
+                class="control-btn w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-2xl font-bold">-</button>
+        </div>
+
+        <!-- Planet Information Panel -->
+        <div id="info-panel"
+            class="info-panel-hidden absolute top-0 right-0 max-h-full overflow-y-auto w-full max-w-md sm:max-w-sm bg-black bg-opacity-70 backdrop-blur-md p-6 overflow-y-auto rounded-l-2xl shadow-2xl">
+            <button id="close-btn" class="absolute top-4 right-4 text-white text-3xl leading-none">&times;</button>
+            <h2 id="planet-name" class="text-4xl font-bold mb-4"></h2>
+            <p id="planet-description" class="text-gray-300 mb-6"></p>
+            <div id="planet-facts" class="space-y-3">
+                <!-- Facts will be dynamically inserted here -->
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="./scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+{
+  "name": "3D Solar System Explorer",
+  "short_name": "Solar 3D",
+  "description": "An interactive 3D model of the solar system built with Three.js. Explore planets, moons, and more!",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#000010",
+  "theme_color": "#000010",
+  "orientation": "any",
+  "categories": ["utilities", "productivity"],
+  "id": "io.github.mamedul.solar-3d",
+  "lang": "en",
+  "dir": "ltr",
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "./icons/solar-system_192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./icons/solar-system_512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "./icons/solar-system_512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
